@@ -4,7 +4,7 @@ Use this file when verifying whether database data is correct, complete, and str
 
 This is the first step in SQL-based investigation.
 
----
+
 
 ## Purpose
 
@@ -12,7 +12,7 @@ Many support issues are incorrectly assumed to be system or API bugs when the ro
 
 This checklist ensures you confirm data integrity before escalating or debugging further.
 
----
+
 
 ## 1. Record Existence Check
 
@@ -31,7 +31,7 @@ FROM table_name
 WHERE id = 'target_id';
 ```
 
----
+
 
 ## 2. Field Completeness Check
 
@@ -50,7 +50,7 @@ FROM table_name
 WHERE required_field IS NULL;
 ```
 
----
+
 
 ## 3. Schema Integrity Check
 
@@ -67,7 +67,7 @@ Confirm structure matches expected design.
 DESCRIBE table_name;
 ```
 
----
+
 
 ## 4. Basic Targeted Query Pattern
 
@@ -83,7 +83,7 @@ WHERE id = 'target_id'
 
 Use filtering to progressively isolate the issue.
 
----
+
 
 ## 5. Null & Data Quality Check
 
@@ -102,7 +102,7 @@ WHERE column_name IS NULL
    OR column_name = '';
 ```
 
----
+
 
 ## 6. Quick Validation Mental Checklist
 
@@ -114,7 +114,7 @@ Before moving to joins or deeper debugging:
 - Is the data current?
 - Is anything silently missing?
 
----
+
 
 ## Key Principle
 

@@ -4,7 +4,7 @@ Use this file when verifying whether data is consistent across multiple systems 
 
 This is used when data exists but does not match between sources.
 
----
+
 
 ## Purpose
 
@@ -17,7 +17,7 @@ This checklist helps determine:
 - whether the issue is delay, transformation, or failure
 - what system should be treated as source of truth
 
----
+
 
 ## 1. Cross-System Comparison
 
@@ -29,7 +29,7 @@ Compare the same entity across systems.
 - source system vs replicated system
 - event source vs processed output
 
----
+
 
 ## 2. State Mismatch Detection
 
@@ -41,7 +41,7 @@ Identify differences in expected state.
 - UI shows outdated or cached values
 - partial updates across services
 
----
+
 
 ## 3. Timing & Sync Issues
 
@@ -54,7 +54,7 @@ Check if mismatch is caused by delay rather than failure.
 - cache invalidation timing
 - batch processing intervals
 
----
+
 
 ## 4. Basic Comparison Query Pattern
 
@@ -66,7 +66,7 @@ FROM table_name
 WHERE updated_at >= NOW() - INTERVAL '24 hours';
 ```
 
----
+
 
 ## 5. Source of Truth Identification
 
@@ -77,7 +77,7 @@ Determine authoritative system:
 - Is transformation happening between layers?
 - Is caching overriding fresh data?
 
----
+
 
 ## 6. Common Root Causes
 
@@ -90,7 +90,7 @@ Most inconsistencies come from:
 - transformation layer bugs
 - schema mismatches between services
 
----
+
 
 ## Key Principle
 

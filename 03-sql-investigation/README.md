@@ -4,7 +4,7 @@ A structured approach for investigating data-related support issues using SQL-ba
 
 This toolkit is used when API behavior, UI data, or system reports do not match expected results.
 
----
+
 
 ## Purpose
 
@@ -17,7 +17,7 @@ This toolkit helps:
 - Confirm whether issues are data-related vs system-related
 - Support engineering escalations with concrete evidence
 
----
+
 
 ## When to Use This Toolkit
 
@@ -30,7 +30,7 @@ Use this when investigating:
 - Delayed or missing updates
 - Reporting or analytics discrepancies
 
----
+
 
 ## Core Investigation Principles
 
@@ -43,7 +43,7 @@ Most “bugs” are actually:
 - missing relationships
 - delayed ingestion
 
----
+
 
 ## 1. Data Validation Checks
 
@@ -54,7 +54,7 @@ Start by confirming raw data integrity.
 - Are null values expected or abnormal?
 - Are timestamps aligned with expected updates?
 
----
+
 
 ## 2. Consistency Checks
 
@@ -65,7 +65,7 @@ Compare across sources or states.
 - Source system vs downstream system
 - Before vs after update events
 
----
+
 
 ## 3. Relationship & Join Verification
 
@@ -79,7 +79,7 @@ Check:
 - Orphaned records
 - Duplicated join results
 
----
+
 
 ## 4. Temporal Analysis
 
@@ -93,7 +93,7 @@ Investigate:
 - Event processing delays
 - Stale cache behavior
 
----
+
 
 ## 5. Null & Edge Case Analysis
 
@@ -106,7 +106,7 @@ Check for:
 - partial writes
 - incomplete ingestion pipelines
 
----
+
 
 ## 6. Common Root Cause Patterns
 
@@ -119,7 +119,7 @@ Most SQL-related support issues fall into:
 - Filtering logic removing valid data
 - Cache returning stale results
 
----
+
 
 ## 7. Investigation Output Standard
 
@@ -131,7 +131,7 @@ Every SQL investigation should produce:
 - Whether issue is data, API, or system layer
 - Recommended escalation path (if needed)
 
----
+
 
 ## Key Principle
 

@@ -4,7 +4,7 @@ A structured framework for diagnosing, isolating, and resolving API-related issu
 
 This playbook is designed to remove guesswork and enforce a consistent debugging process for API failures and unexpected behavior.
 
----
+
 
 ## Purpose
 
@@ -17,7 +17,7 @@ This framework ensures every issue is:
 - Validated through reproduction and evidence
 - Resolved or escalated with clear context
 
----
+
 
 ## When to Use This Playbook
 
@@ -30,7 +30,7 @@ Use this when working with:
 - Integration failures between systems
 - Partial or missing data responses
 
----
+
 
 ## Core Debugging Model
 
@@ -48,7 +48,7 @@ How does the system process the request?
 ### 4. Dependency Layer
 What external/internal systems are involved?
 
----
+
 
 ## How This Folder Is Structured
 
@@ -62,7 +62,7 @@ Each file in this folder isolates one part of the debugging process:
 - `reproduction-checklist.md` → confirming issue behavior
 - `isolation-flow.md` → end-to-end decision flow
 
----
+
 
 ## Standard Debugging Workflow
 
@@ -74,7 +74,7 @@ Each file in this folder isolates one part of the debugging process:
 6. Attempt reproduction in isolation  
 7. Identify root cause or escalate
 
----
+
 
 ## Key Principle
 
@@ -82,7 +82,7 @@ Do not assume root cause before isolating the failure layer.
 
 Every incorrect assumption increases debugging time and misdirection risk.
 
----
+
 
 ## Expected Outcome
 
@@ -93,7 +93,7 @@ Using this framework should result in:
 - More accurate escalation context
 - Consistent troubleshooting methodology across incidents
 
----
+
 
 ## Related Modules
 
